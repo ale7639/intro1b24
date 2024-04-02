@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+    <form action="">
+        <input type="text" name="usuario" placeholder="Usuário">
+        <input type="password" name="senha" placeholder="Senha">
+        <hr>
+        <input type="radio" name="dia" value="segunda"> Segunda <br>
+        <input type="radio" name="dia" value="terca" checked> Terça <br>
+        <input type="radio" name="dia" value="quarta"> Quarta <br>
+        <input type="radio" name="dia" value="quinta"> Quinta <br>
+        <input type="radio" name="dia" value="sexta"> Sexta <br>
+        <hr>
+        <h2>Está chovendo</h2>
+        <label for="sim">
+            <input type="radio" name="chuva" value="sim" id="sim"> Sim
+        </label>
+
+        <label for="nao">
+            <input type="radio" name="chuva" value="nao" id="nao"> Não
+        </label>
+        <hr>
+        <h2>Sobor da pizza</h2>
+        <label for="calabresa">
+            <input type="checkbox" name="sabor" value="calabresa" id="calabresa">
+            Calabresa
+        </label>
+
+        <label for="strogonoff">
+            <input type="checkbox" name="sabor" value="strogonoff" id="strogonoff">
+            Strogonoff
+        </label>
+
+        <label for="quatroqueijos">
+            <input type="checkbox" name="sabor" value="quatroqueijos" id="quatroqueijos">
+            Quatro Queijos
+        </label>
+        
+        <label for="frangocatupiry">
+            <input type="checkbox" name="sabor" value="frangocatupiry" id="frangocatupiry">
+            Frango Catupiry
+        </label>
+        </form>
+        <hr>
+
+        <form action="" method="get">
+            <lambel for="Nome:"> Nome
+             <imput type="text" name="Nome" id="Nome">
+            </label>
+            <br><br>
+            <lambel for="E-Mail" >
+                E-Mail
+                <imput type="E-Mail" name="E-mail" id="E-Mail">
+            </lambel>
+            <br><br>
+            <label for="Mensagem">
+                Mensagem
+                <textarea name="Mensagem" id="Mensagem"></textarea>
+             </label>
+
+            </imput type=submit value="Enviar Mensagem">
+            <br><br>
+
+        <form action="" method="post">
+            <label for="nascimento">
+                Data de nascimento
+                <imput type="date" name="nascimento" id="nascimento">
+            </lambel>
+        <br><b>
+        <label for="cidade">
+        Cidade Natal
+        <input type="text" name="cidade" id="cidade">
+        </label>
+        <br><br>
+        <bottom type="submit">Enviar cadastro</bottom>
+        <bottom type="reset">Resetar cadastro</bottom>
+        </form>e
+    
+        </form>
+
+
+</body>
+</html>
