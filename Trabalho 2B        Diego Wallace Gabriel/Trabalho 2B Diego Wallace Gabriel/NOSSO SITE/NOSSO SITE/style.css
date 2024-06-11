@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header .logotipo {
+    float: left;
+}
+
+header .suporte {
+    float: right;
+    margin-top: 20px;
+}
+
+.logotipo img {
+    width: 200px;
+}
+
+.menuitem li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu,
+.menuitem {
+    display: inline;
+}
+
+.header {
+    margin: 20px 0;
+}
+
+.menuitem li a {
+    color: #ffa0c5;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.2s;
+    border-radius: 6px;
+}
+
+.menu {
+    margin: 200px;
+}
+
+.menuitem li a:hover {
+    color: #ffa0c5;
+    border-bottom: 2.6px solid #d82995;
+    transition: 0.2s;
+}
+
+header {
+    z-index: 2;
+    position: relative;
+    padding-top: 10px;
+}
+
+.suporte a {
+    background: #42e403;
+    padding: 20px;
+    border-radius: 30px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.hover:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.slider {
+    background-image: url('./img/Banner.png');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    top: -153px;
+    position: relative;
+    opacity: 0.2;
+}
+
+h1 {
+    text-align: center;
+    top: 150px;
+    position: relative;
+    color: #ee60b8;
+    font-size: 50px;
+    z-index: 3;
+    font-weight: bold;
+}
+
+.destaques .item {
+    width: 15%;
+    display: inline-block;
+    margin: 0.5%;
+    position:relative;
+    }
+
+.destaques .titulo {
+    color: #161515;
+    font-size: 20px;
+    position: absolute;
+    background-image: liner-gradient(to top, #000, #ffffff00);
+    bottom: 0;
+    padding: 5px;
+}
+
+.destaques .imagem img {
+    width: 100%;
+    height: 250px;
+}
+
+.destaques .imagem {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.titulo-categoria {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    background: #3b3b3b;
+    margin: 20px 0;
+}
+
+footer {
+    background: #e95b96;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 50px 0;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sociais li {
+    display: inline-block;
+}
+
+.col {
+    width: 30%;
+    display: inline-block;
+}
+
+footer i {
+    font-size: 40px;
+    padding: 5px;
+}
+
+.mostrar-mobile {
+    display: none;
+}
+
+.esconder-mobile {
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .col {
+        width: 100%;
+    }
+
+    .dropdown {
+        width: calc(100% - 20px);
+        padding: 10px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    .dropdown img {
+        max-width: 235px;
+    }
+
+    .dropdown i {
+        font-size: 48px;
+        display: inline;
+        padding: 15px;
+        position: absolute;
+
+    }
+
+    .dropdown li a {
+        font-size: 22px;
+        text-decoration: none;
+        color: #000;
+        line-height: 30px;
+    }
+
+    .dropdown li {
+        border-top: 1px solid #000;
+        padding: 10px;
+    }
+
+    .dropdown-content {
+        display: none;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .destaques .titulo {
+        width: calc(100% - 10px);
+    }
+
+    .mostrar-mobile {
+        display: block;
+    }
+
+    .esconder-mobile {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .destaques {
+        text-align: center;
+    }
+
+    .destaques .item {
+        width: 100%;
+    }
+
+    .destaques .imagem img {
+        height: auto;
+    }
+
+    .item {
+        max-width: 350px;
+    }
+    .sobre{
+        max-width: 350px;
+    }
+}
+@media (min-width:767) and (max-width:992px) {
+    .menu-mobile{
+        display: none;
+    }
+    .esconder-mobile{
+        display: block;
+    }
+    .col{
+        width: 49%;
+    }
+}
+.sobre{
+    width: 100%;
+}
+
+.col .sociais a{
+    width: 80px;
+    height: 50px;
+    display:inline-block;
+    margin-right: 4px;
+}
